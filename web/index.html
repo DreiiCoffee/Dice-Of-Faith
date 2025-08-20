@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Dice of Fate 3D</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div id="app">
+		<header>
+			<h1>Dice of Fate — @Dreiicoffee</h1>
+			<p>Press Space or click Roll</p>
+		</header>
+		<div id="stage">
+			<div class="scene">
+				<div class="dice" id="dice1" aria-label="dice 1">
+					<div class="face front" data-value="1"></div>
+					<div class="face back" data-value="6"></div>
+					<div class="face right" data-value="3"></div>
+					<div class="face left" data-value="4"></div>
+					<div class="face top" data-value="2"></div>
+					<div class="face bottom" data-value="5"></div>
+				</div>
+				<div class="dice" id="dice2" aria-label="dice 2">
+					<div class="face front" data-value="1"></div>
+					<div class="face back" data-value="6"></div>
+					<div class="face right" data-value="3"></div>
+					<div class="face left" data-value="4"></div>
+					<div class="face top" data-value="2"></div>
+					<div class="face bottom" data-value="5"></div>
+				</div>
+				<div class="dice" id="dice3" aria-label="dice 3">
+					<div class="face front" data-value="1"></div>
+					<div class="face back" data-value="6"></div>
+					<div class="face right" data-value="3"></div>
+					<div class="face left" data-value="4"></div>
+					<div class="face top" data-value="2"></div>
+					<div class="face bottom" data-value="5"></div>
+				</div>
+			</div>
+		</div>
+		<div id="controls">
+			<button id="rollBtn">Roll</button>
+		</div>
+		<div id="result">
+			<div id="diceValues">—</div>
+			<div id="fateText">Ready when you are.</div>
+		</div>
+	</div>
+
+	<div id="cursedOverlay" aria-hidden="true">
+		<div class="message">YOU ARE BEING WATCHED</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
+
